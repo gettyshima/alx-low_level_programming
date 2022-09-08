@@ -8,6 +8,6 @@
 int main(void)
 {
 	printf("and that piece of art is useful%c %c ", '"', '-');
-	printf(" Dora Korpar, 2015%c10%c19%c", '-', '-', 10);
+	printf("Dora Korpar, 2015%c10%c19%c", '-', '-', 10);
 		return (1);
 }
