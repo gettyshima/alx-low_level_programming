@@ -17,8 +17,7 @@ int main(void)
 			{
 				if (i == j || j == k || k == i)
 					continue;
-				if (i != j && j != k && k != i && i < j && j < k &&
-						i < k && k > i && k > j)
+				if (i != j && j != k && k != i && i < j && j < k && i < k && k > i && k > j)
 				{
 					putchar(i);
 					putchar(j);
