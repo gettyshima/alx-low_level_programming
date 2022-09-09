@@ -10,10 +10,10 @@ int main(void)
 
 	for (alpha = 'a'; alpha <= 'z'; ++alpha)
 	{
-		if (alpha == q)
+		if (alpha == 'e')
 			continue;
 
-		else if (alpha == q)
+		else if (alpha == 'q')
 			continue;
 	}
 	putchar(alpha);
