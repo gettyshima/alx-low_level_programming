@@ -1,15 +1,23 @@
 #include <stdio.h>
 /**
-  *main - prints uppercase alphabets from A to Z
+  *main - prints lowercase and uppercase alphabets from a to z
   *
   *Return: 0 (success)
   */
 int main(void)
 {
-	char ch;
+	char a, b;
 
-	for (ch = 'A'; ch <=  'Z'; ++ch)
-		putchar(ch);
+	for (a = 'a'; a <= 'z'; ++a)
+	{
+		putchar(a);
+	}
+
+	for (b = 'A'; b <= 'z'; ++b)
+	{
+		putchar(b);
+	}
+
 	putchar('\n');
 
 	return (0);
