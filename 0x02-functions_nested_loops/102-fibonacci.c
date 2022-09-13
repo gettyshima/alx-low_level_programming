@@ -15,12 +15,10 @@ int main(void)
 		add = i + j;
 		i = j;
 		j = add;
-		printf("%u", add);
 		if (n == 50)
-			break;
-		_putchar(',');
-		_putchar(' ');
+			printf("%lu\n" add);
+		else
+			printf("%lu, ", add);
 	}
-	_putchar('\n');
 	return (0);
 }
