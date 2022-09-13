@@ -14,6 +14,6 @@ int main(void)
 		if ((n % 3) == 0 || (n % 5) == 0)
 			add = add + n;
 	}
-	printf("%d\n" add);
+	printf("%d\n", add);
 	return (0);
 }
