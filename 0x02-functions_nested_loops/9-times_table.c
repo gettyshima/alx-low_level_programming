@@ -30,7 +30,7 @@ void times_table(void)
 				_putchar(' ');
 			}
 		}
-		if (i == 9 && j == 9)
+		if (i == 9)
 			break;
 		_putchar('\n');
 	}
