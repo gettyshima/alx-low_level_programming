@@ -8,7 +8,6 @@
   */
 int main(void)
 {
-	int n;
 	long int i = 0, j = 1, add, sum = 0;
 
 	while (add < 4000000)
