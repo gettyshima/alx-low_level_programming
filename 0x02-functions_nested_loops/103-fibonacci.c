@@ -14,6 +14,7 @@ int main(void)
 	{
 		if (add % 2 == 0)
 			sum = sum + add;
+
 		add = i + j;
 		i = j;
 		j = add;
