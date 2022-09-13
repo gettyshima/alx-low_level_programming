@@ -16,7 +16,7 @@ int main(void)
 		i = j;
 		j = add;
 		if (n == 50)
-			printf("%lu\n" add);
+			printf("%lu\n", add);
 		else
 			printf("%lu, ", add);
 	}
