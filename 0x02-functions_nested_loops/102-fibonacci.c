@@ -1,0 +1,26 @@
+#include "main.h"
+#include <stdio.h>
+/**
+  *main - prints the first 50 fibonnacci numbers starting with 1 and 2
+  *
+  *Return: 0 (success)
+  */
+int main(void)
+{
+	int n;
+	unsigned int i = 0, j = 1, add;
+
+	for (n = 1; n <= 50; n++)
+	{
+		add = i + j;
+		i = j;
+		j = add;
+		printf("%u", add);
+		if (n == 50)
+			break;
+		_putchar(',');
+		_putchar(' ');
+	}
+	_putchar('\n');
+	return (0);
+}
