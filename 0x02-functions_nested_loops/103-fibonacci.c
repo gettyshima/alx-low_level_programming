@@ -1,24 +1,27 @@
-#include "main.h"
 #include <stdio.h>
+
 /**
-  *main - find and add all even value of fabanacci numbers
-  *that do not exceed 4000000
-  *
-  *Return: 0 (success)
-  */
+ * main - main block
+ * Description: Print the sum of even Fibonacci numbers up to a fib value
+ * not exceeding 4,000,000.
+ * Return: 0
+ */
+
 int main(void)
 {
-	long int i = 0, j = 1, add, sum = 0;
+	int i = 1, j = 2, sum = 0;
+	int tmp;
 
-	while (add < 4000000)
+	while (j < 4000000)
 	{
-		if (add % 2 == 0)
-			sum = sum + add;
+		if (j % 2 == 0)
+			sum += j;
 
-		add = i + j;
-		i = j;
-		j = add;
+
+		tmp = j;
+		j += i;
+		i = tmp;
 	}
-	printf("%lu\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
