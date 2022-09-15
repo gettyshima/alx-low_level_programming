@@ -1,32 +1,26 @@
 #include <stdio.h>
 
-int pit(void)
+int put(int n)
 {
-	int i, j;
+	int i;
+	 if (n <= 0)
+			putchar('\n');
 
-	i = 0;
-	
-	while (i <= 10)
+	for (i = 1; i <=n; i++)
 	{
-		for(j=0; j<= 14; j++)
-		{
-			/*if (j > 9)
-			{
-				pit(j/10);
-				putchar(j%10 + '0');
-
-			}	*/	
-	putchar(j/10 + '0');
-	putchar(j%10 + '0');
-}
-putchar('\n');
-		
-		i++;
-}
+		if (!( n  <= 0))
+			putchar('_');
+			}
+	return 0;
 }
 
 int main(void)
 {
-	pit();
+	put(0);
+	put(2);
+	put(-61);
+	put(5);
+	put(0);
+
 	return (0);
 }
