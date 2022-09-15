@@ -25,19 +25,30 @@
 
 void put(int n)
 {
-        int i;
+        int j, i;
 
-         //if (n <= 0)
-           //      putchar('\n');
+
+
          for (i = 1; i <= n; i++)
          {
                  if (!(n <= 0))
-                         putchar('_');
-         
-	 }
-         putchar('\n');
+                         {
+				 for (j = 1; j <= n; j++)
+				 	putchar(' ');
+					 putchar('\\');
+					 putchar('\n');
+			 }
+         }
 
-}
+        	putchar('\n');
+ }
+
+
+
+
+
+
+
 int main(void)
 {
 	put(0);
