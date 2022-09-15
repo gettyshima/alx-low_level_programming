@@ -9,7 +9,7 @@ int put(int n)
 	for (i = 1; i <=n; i++)
 	{
 		if (!( n  <= 0))
-			putchar('_');
+			putchar(95);
 			}
 	return 0;
 }
