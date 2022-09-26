@@ -6,6 +6,7 @@
   *@c: the character to be located
   *
   *Return: pointer to the first occurance
+  *NULL if none
   */
 
 char *_strchr(char *s, char c)
@@ -15,12 +16,7 @@ char *_strchr(char *s, char c)
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == c)
-		{
-			s = s + i;
-			break;
-		}
-		else if (s[i] != c)
-			s = NULL;
+			return (&s[i]);
 	}
-	return (s);
+	return (0);
 }
