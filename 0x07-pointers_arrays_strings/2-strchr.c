@@ -16,7 +16,6 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 			break;
-		printf("i is %d\n", i);
 	}
 	s = s + i;
 	return (s);
