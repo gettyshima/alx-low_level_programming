@@ -3,6 +3,7 @@
 
 /**
   *_strdup - copies a string given as a parameter i.e duplicates a string
+  *arr is the new string
   *@str: the string
   *
   *Return: pointer to the newly allocated space
@@ -23,5 +24,6 @@ char *_strdup(char *str)
 		return (NULL);
 	for (i = 0; i < len; i++)
 		arr[i] = str[i];
+	arr[len] = '\0';
 	return (arr);
 }
