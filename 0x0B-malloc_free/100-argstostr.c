@@ -30,7 +30,7 @@ char *argstostr(int ac, char **av)
 			len += 1;
 	}
 	len += ac;
-	nstr = (char *)malloc((1 + len )* sizeof(char));
+	nstr = (char *)malloc((1 + len) * sizeof(char));
 	if (nstr == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
