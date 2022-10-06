@@ -21,7 +21,7 @@ int count_word(char *str)
 		{
 			/*count the words looping through it*/
 			while (*str != ' ' && *str)
-				*str++;
+				str++;
 			word_count++;
 			/*increase the word_count after each loop*/
 		}
@@ -64,12 +64,12 @@ int word_len(char *str)
 char **strtow(char *str)
 {
 	char **ptr;
-	int index = 0, words, letters, i, j;
+	int index = 0, words, letters, a, l;
 
 	if (!str)
 		return (NULL);
 	words = count_word(str);
-	if (word == 0)
+	if (words == 0)
 		return (NULL);
 
 	ptr = malloc(sizeof(char *) * (words + 1));
