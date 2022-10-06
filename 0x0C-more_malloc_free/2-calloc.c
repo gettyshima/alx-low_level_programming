@@ -22,4 +22,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (p == NULL)
 		return (NULL);
 	memset(p, 0, nb);
+	return (p);
 }
