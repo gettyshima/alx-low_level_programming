@@ -21,7 +21,7 @@ char *argstostr(int ac, char **av)
 	/**
 	  *get the lenght of each argument passed
 	  *we are treating it in a similar manner as a 2D array
-	  *use the kenght to decided size of malloac
+	  *use the lenght to decided size of malloac
 	  *concat the string
 	  */
 	for (i = 0; i < ac; i++)
