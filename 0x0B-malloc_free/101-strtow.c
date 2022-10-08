@@ -85,7 +85,6 @@ char **strtow(char *str)
 
 		}
 
-	strings[string_index] = NULL;
 	}
 	return (strings);
 }
