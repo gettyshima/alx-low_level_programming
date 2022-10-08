@@ -41,7 +41,7 @@ int *size(char *string, char *seperators, int *count)
 char **strtow(char *str)
 {
 	int count_strings = 0, i = 0, string_index, len = strlen(str);
-	int j = 0, to_allocate;
+	int *counting, j = 0, to_allocate;
 	char **strings, buffer[16384];
 
 /*	if (str == NULL || str == "")
@@ -49,8 +49,8 @@ char **strtow(char *str)
 		return (NULL);
 	}
 	*/
-	size(str, " ", &count_strings);
-	strings = malloc(sizeof(char *) * count_strings);
+	counting = size(str, " ", &count_strings);
+	strings = malloc(sizeof(char *) * *counting);
 	if (strings == NULL)
 		{
 			for (i = 0; i < count_strings; i++)
@@ -85,30 +85,7 @@ char **strtow(char *str)
 
 		}
 
-	/*strings[string_index] = NULL;*/
+	strings[string_index] = NULL;
 	}
 	return (strings);
-}
-
-void print_tab(char **tab)
-{
-    int i;
-
-    for (i = 0; tab[i] != NULL; ++i)
-    {
-        printf("%s\n", tab[i]);
-    }
-}
-int main(void)
-{
-    char **tab;
-
-    tab = strtow("      ALX School         #cisfun      ");
-    if (tab == NULL)
-    {
-        printf("Failed\n");
-        return (1);
-    }
-    print_tab(tab);
-    return (0);
 }
