@@ -20,7 +20,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		for (i = 0; i < n; i++)
 		{
-			printf("%u", va_arg(ac, unsigned int));
+			printf("%u", va_arg(ac, int));
 			if (!(i == (n - 1)))
 				printf("%s", separator);
 		}
