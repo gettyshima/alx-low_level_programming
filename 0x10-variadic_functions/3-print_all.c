@@ -56,7 +56,7 @@ void print_all(const char * const format, ...)
 
 void print_separator(int n, int len, const char * const string)
 {
-	if (n < len - 1)
+	if (string && n < len - 1)
 	{
 		switch (string[n])
 		{
