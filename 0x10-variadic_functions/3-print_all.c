@@ -1,7 +1,8 @@
 #include "variadic_functions.h"
+#include <stdarg.h>
+#include <string.h>
 
 void print_separator(int n, int len, const char * const string);
-int _strlen(const char * const s);
 
 /**
   *print_all - prints anything
@@ -16,7 +17,7 @@ void print_all(const char * const format, ...)
 	va_list my_list;
 
 	va_start(my_list, format);
-	arg_count = _strlen(format);
+	arg_count = strlen(format);
 	i = 0;
 	while (i < arg_count)
 	{
@@ -71,20 +72,4 @@ void print_separator(int n, int len, const char * const string)
 				break;
 		}
 	}
-}
-
-/**
-  *_strlen - calculates string lenght
-  *@s: the string
-  *Return: the lenght
-  */
-
-int _strlen(const char * const s)
-{
-	int i;
-
-	for (i = 0; s[i] != '\0'; i++)
-	{
-	}
-	return (i);
 }
