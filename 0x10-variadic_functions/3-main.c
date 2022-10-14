@@ -16,7 +16,7 @@ int main(void)
 
 {
 
-	    print_all("ceis", 'B', 3, "stSchool");
+	    print_all("lischisyfc", 2,NULL,'B', 3, "stSchool", 6.6);
 
 	        return (0);
 
