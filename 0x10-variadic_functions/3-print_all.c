@@ -17,9 +17,11 @@ void print_all(const char * const format, ...)
 	va_list my_list;
 
 	va_start(my_list, format);
+	while (format == NULL)
+		return;
 	arg_count = strlen(format);
 	i = 0;
-	while (i < arg_count && format && format[i])
+	while (format != NULL && i < arg_count)
 	{
 		switch (format[i])
 		{
@@ -58,7 +60,7 @@ void print_all(const char * const format, ...)
 
 void print_separator(int n, int len, const char * const string)
 {
-	if (string && n < len - 1)
+	if (string[n] && string && n < len - 1)
 	{
 		switch (string[n])
 		{
