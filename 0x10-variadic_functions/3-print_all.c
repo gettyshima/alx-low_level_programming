@@ -17,12 +17,10 @@ void print_all(const char * const format, ...)
 	va_list my_list;
 
 	va_start(my_list, format);
-	while (format == NULL)
-		return;
-	arg_count = strlen(format);
 	i = 0;
-	while (format != NULL && i < arg_count)
+	while (format != NULL && format[i])
 	{
+		arg_count = strlen(format);
 		switch (format[i])
 		{
 			{ case 'c': printf("%c", va_arg(my_list, int)); }
