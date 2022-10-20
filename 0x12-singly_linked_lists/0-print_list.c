@@ -2,7 +2,7 @@
 
 /**
   *print_list - prints the elements of a list
-  *@h: the link
+  *@h: the link list
   *
   *Return: the number of nodes
   */
