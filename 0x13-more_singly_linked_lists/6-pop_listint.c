@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
-  *int pop_listint(listint_t **head)- deletes head node of listint_t
+  *pop_listint - deletes head node of listint_t
   *@head: head list
   *
   *Return: head node’s data (n)
@@ -10,4 +10,15 @@
 
 int pop_listint(listint_t **head)
 {
+	listint_t *to_delete;
+	int new_n;
 
+	if (head == NULL)
+		return (0);
+	to_delete = *head;
+	new_n = (*head)->n;
+	*head = (*head)->next;
+	free(to_delete);
+
+	return (new_n);
+}
