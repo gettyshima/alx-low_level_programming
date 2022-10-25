@@ -9,19 +9,15 @@
 
 void free_listint2(listint_t **head)
 {
-	listint_t *current, *node;
-
-	/**
-	  *iterate through the entire node
-	  *set head to the next node
-	  *free current
-	  */
-	current = *head;
-	while (current)
+	listint_t *temp;
+	listint_t *temp2;
+	
+	temp2 = *head;
+	while (temp2 != NULL && head != NULL)
 	{
-		node = current->next;
-		free(current);
-		current = node;
+		temp = temp2;
+		temp2 = temp2->next;
+		free(temp);
 	}
 	*head = NULL;
 }
