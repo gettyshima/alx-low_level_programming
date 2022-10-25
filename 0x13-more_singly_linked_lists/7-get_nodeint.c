@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
-  *count_node counts the number of nodes
+  *count_node -  counts the number of nodes
   *@h: head pointer
   *
   *Return: the count
@@ -21,7 +21,7 @@ size_t count_node(listint_t *h)
 
 /**
   *get_nodeint_at_index - returns the nth node of listint_t
-  *head: head list
+  *@head: head list
   *@index: index of the node starting at 0
   *
   *Return: returns the nth node
