@@ -1,4 +1,5 @@
 #include "main.h"
+#include "math.h"
 
 /**
   *_pow_recursion - ruturns the value of x raised to the power of y
@@ -45,7 +46,7 @@ unsigned int binary_to_uint(const char *b)
 	{
 		rem = converted_num % 10;
 		converted_num /= 10;
-		dec += rem * _pow_recursion(2, i);
+		dec += rem * pow(2, i);
 		++i;
 	}
 	return (dec);
