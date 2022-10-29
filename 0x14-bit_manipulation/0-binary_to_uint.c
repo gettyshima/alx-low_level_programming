@@ -39,7 +39,7 @@ unsigned int binary_to_uint(const char *b)
 		if (b[i] != '0' && b[i] != '1')
 			return (0);
 	}
-	converted_num = atoi(b);
+	converted_num = (unsigned int)atoi(b);
 	i = 0;
 	while (converted_num != 0)
 	{
